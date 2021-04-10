@@ -1,12 +1,14 @@
+import 'package:flutter/cupertino.dart';
+
 class User {
   final String givenName;
   final String familyName;
   final String imageUrl;
 
   const User({
-    required this.givenName,
-    required this.familyName,
-    required this.imageUrl,
+    @required this.givenName,
+    @required this.familyName,
+    @required this.imageUrl,
   });
 }
 
@@ -94,8 +96,8 @@ class Room {
   final List<User> others;
 
   const Room({
-    required this.club,
-    required this.name,
+    @required this.name,
+    @required this.club,
     this.time = '',
     this.speakers = const [],
     this.followedBySpeakers = const [],
